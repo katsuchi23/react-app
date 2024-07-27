@@ -1,4 +1,1 @@
-print("hello world")
-=========
-print("hallo")
->>>>>>>>> Temporary merge branch 2
+print("hello world!")
