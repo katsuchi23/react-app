@@ -7,7 +7,25 @@
     border : 0px;
   }
 
-  .button:hover{
+  .button_click{
     background: url(./assets/botan.gif) 0 0;
     background-size: cover; 
+    width: 300px; 
+    height: 300px; 
+    font-size: 2rem; 
+    border : 0px;
+  }
+
+  .button_blue{
+    background-color : red;
+    color: rgb(255, 255, 255);
+    border : 0px;
+    font-size: 100px;
+  }
+
+  .button_blue:active{
+    background-color : blue;
+    color: rgb(255, 255, 255);
+    border : 0px;
+    font-size: 100px;
   }
