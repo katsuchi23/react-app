@@ -1,10 +1,10 @@
-import Counter from './Counter.tsx';
+import Button_play from './Button-play.tsx';
 
 
 function App() {
 
   return (
-    <Counter />
+    <Button_play />
   )
 }
 
