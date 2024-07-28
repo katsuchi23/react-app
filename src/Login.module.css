@@ -1,0 +1,72 @@
+.box{
+    width: 40vw;
+    height: 50vh;
+    max-width: 450px;
+    max-height: 650px;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    position : relative;
+}
+
+.button{
+    width: 140px;
+    height: 60px;
+    border : 0px;
+    border-radius: 10px;
+    background-color: rgb(216, 49, 211);
+    position : absolute;
+    bottom: 50px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    transition: background-color, color 200ms ease-out;
+}
+
+.button:hover{
+    background-color: rgb(226, 205, 246);
+    color: rgb(216, 49, 211);
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputcontainer{
+    position : absolute;
+    left: 10%;
+    width: 80%;
+    top: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20PX;
+    justify-content: center;
+}
+.input{
+    width: 100%;
+    height: 100%;
+    border : 1px solid rgb(216, 49, 211);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: border 200ms ease-out;
+}
+
+.input:hover{
+    border : 1px solid rgb(226, 205, 246);
+}
+
+.playbutton{
+    background: url(./assets/botan.png) 0 0;
+    background-size: cover; 
+    width: 300px; 
+    height: 300px; 
+    font-size: 2rem; 
+    border : 0px;
+}

@@ -1,10 +1,14 @@
-import Button_play from './Button-play.tsx';
+import Login from './Login.tsx';
+import style from './App.module.css';
 
 
 function App() {
 
   return (
-    <Button_play />
+    <div className= {style.background}>
+      <Login />
+    </div>
+    
   )
 }
 
