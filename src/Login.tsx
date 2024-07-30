@@ -2,17 +2,41 @@ import { useState } from "react";
 import style from './Login.module.css';
 
 function Login() {
+    
+   const [count, setCount] = useState(0);
+
+   const buttonsound = () =>{
+        // if (count > 0) return;
+
+        const audio: any = new Audio('./src/assets/login/nakiri-ayame-yo-dazo.mp3');
+        audio.play();
+        setCount(c => c + 1);
+        console.log(count);
+        // document.getElementById("playbutton")?.style.setProperty("--button-height", "100%");
+        
+    }
 
     return(
     <>
     <div className= {style.box}>
-        <h1 className= {style.title}>Sign Up</h1>
-        <button className={style.playbutton}></button>
-        <div className= {style.inputcontainer}>
-            <input type="text" className= {style.input}/>
-            <input type="text" className= {style.input}/>
+        <div className= {style.loginpicture}>
+
         </div>
-        <button className= {style.button}>Submit</button>
+
+        <div className= {style.loginpage}>
+            <h1 className= {style.title}>Sign Up</h1>
+            <div className={style.playbuttondiv}>
+                <button className={style.playbutton} id = "playbutton"  onClick={buttonsound}></button>
+                <hr />
+            </div>
+            
+            <div className= {style.inputcontainer}>
+                <input type="text" className= {style.input}/>
+                <input type="text" className= {style.input}/>
+            </div>
+            <button className= {style.button}>Submit</button>
+        </div>
+        
     </div>
     </>
     )
