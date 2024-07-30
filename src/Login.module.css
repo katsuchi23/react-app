@@ -11,22 +11,70 @@
 }
 
 .loginpage{
-    border: solid rgb(136, 57, 134);
+    border: solid rgba(136, 57, 133, 0);
     width: 40%;
-    height: 100%;
+    height: 96%;
     margin: 1%;
     font-size: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    border-radius: 6%;
+    transition: all 200ms ease-out;
+}
+
+.loginpage:hover{
+    border: solid rgb(226, 205, 246);
 }
 
 .loginpicture{
-    border: solid rgb(136, 57, 134);
+    border: solid rgba(136, 57, 133, 0);
     margin: 1%;
-    height: 100%;
+    height: 96%;
     width: 60%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-image: var(--bg,url('./assets/login/ayame.png')) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6%;
+    transition: all 200ms ease-out;
+}
+
+.loginpicture:hover{
+    border: solid rgb(226, 205, 246);
+}
+
+.search{
+    position: absolute;
+    width: 90%;
+    border: solid rgba(226, 205, 246, 0);
+    background-color: rgba(0, 255, 255, 0);
+    border-radius: 30px;
+    height: 8%;
+    top: 1%;
+    transition: all 200ms ease-out;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.search:hover{
+    border: solid rgb(226, 205, 246);
+}
+
+.date{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    font-size: min(5vw, 80px);
+    font-family: monospace;
+    font-weight: bold;
+    display: block;
 }
 
 .button{
@@ -55,7 +103,8 @@
 
 .title{
     font-size: min(4vw, 60px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
+    font-weight: bold;
     text-align: center;
     position: absolute;
     margin: 5%;
@@ -91,17 +140,70 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    width: 100%;
-    height: var(--button-height, 20%);
+    width: 70%;
+    height: var(--button-height, 10%);
     bottom: 0;
     border: 0;
+    align-self: center;
     transition: height 200ms ease-out;
 }
 
 .playbutton:hover{
-    height: 100%
-    
+    height: 70% 
 }
+
+.playbutton2{
+    background-color: transparent;
+    background: url('./assets/login/ayame.png') 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 70%;
+    width: var(--button-height, 10%);
+    border: 0;
+    transition: all 200ms ease-out;
+}
+
+.playbutton2:hover{
+    width: 70%;
+}
+
+.playbutton3{
+    background-color: transparent;
+    background: url('./assets/login/ayame.png') 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 70%;
+    align-self: flex-end;
+    width: var(--button-height, 10%);
+    border: 0;
+    transition: all 200ms ease-out;
+}
+
+.playbutton3:hover{
+    width: 70%;
+}
+
+.playbutton4{
+    background-color: transparent;
+    background: url('./assets/login/ayame.png') 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 70%;
+    height: var(--button-height, 10%);
+    top: 0;
+    border: 0;
+    transition: height 200ms ease-out;
+    align-self: center;
+}
+
+.playbutton4:hover{
+    height: 70% 
+}
+
+
 
 .playbuttondiv{
     width: 70%; 
@@ -110,15 +212,8 @@
     top: 23%;
     position: relative;
     cursor: pointer;
-    /* border: solid 1px red; */
-}
-
-hr {
-    border: 0;
-    height: 2px; /* Thickness of the line */
-    width: 100%;
-    background-color: rgb(226, 205, 246); /* Line color */
-    margin:0; /* Space above and below the line */
-    position: absolute;
-    top: 100%;
+    /* border: solid rgba(255, 0, 0, 0.158); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
