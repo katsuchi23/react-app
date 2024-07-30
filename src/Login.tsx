@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from './Login.module.css';
+import sound from './assets/login/nakiri-ayame-yo-dazo.mp3';
 
 function Login() {
     
@@ -8,7 +9,7 @@ function Login() {
    const buttonsound = () =>{
         // if (count > 0) return;
 
-        const audio: any = new Audio('./src/assets/login/nakiri-ayame-yo-dazo.mp3');
+        const audio: any = new Audio(sound);
         audio.play();
         setCount(c => c + 1);
         console.log(count);
