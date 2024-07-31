@@ -1,7 +1,9 @@
 import { useState } from "react";
 import style from './Login.module.css';
 import sound from './assets/login/nakiri-ayame-yo-dazo.mp3';
-import credential from './assets/target/login.tsx';
+
+const username = import.meta.env.VITE_USERNAME;
+const password = import.meta.env.VITE_PASSWORD;
 
 function Login() {
    
@@ -24,7 +26,6 @@ function Login() {
 
    const buttonsound = () => {
         // if (count > 0) return;
-
         const audio: any = new Audio(sound);
         audio.play();
         // setCount(c => c + 1);
@@ -33,7 +34,7 @@ function Login() {
         
     }
 
-    const {username, password} = credential;
+    // const {username, password} = credential;
 
     const check = () => {
         const usernameElement = document.getElementById("username") as HTMLInputElement;
